@@ -1,1 +1,57 @@
+export default function LandingPage() {
+  return (
+    <div className="min-h-screen bg-gray-950 text-white flex items-center justify-center px-6">
+      <div className="max-w-4xl w-full grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p className="text-green-400 font-semibold mb-3">
+            Curso Online
+          </p>
+
+          <h1 className="text-5xl font-bold leading-tight mb-6">
+            DevOps & Scripting
+          </h1>
+
+          <p className="text-gray-300 text-lg mb-8">
+            Aprende automação, Linux, Git, Bash e pipelines CI/CD com aulas práticas e diretas.
+          </p>
+
+          <div className="flex gap-4">
+            <button className="bg-green-500 hover:bg-green-400 text-black font-semibold px-6 py-3 rounded-2xl transition">
+              Entrar no Curso
+            </button>
+
+            <button className="border border-gray-700 hover:border-gray-500 px-6 py-3 rounded-2xl transition">
+              Saber Mais
+            </button>
+          </div>
+        </div>
+
+        <div className="bg-gray-900 border border-gray-800 rounded-3xl p-8 shadow-2xl">
+          <div className="space-y-5">
+            <div className="bg-gray-800 rounded-2xl p-4">
+              <h3 className="font-semibold text-green-400 mb-1">Git & GitHub</h3>
+              <p className="text-gray-400 text-sm">
+                Versionamento e workflows modernos.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 rounded-2xl p-4">
+              <h3 className="font-semibold text-green-400 mb-1">Shell Scripting</h3>
+              <p className="text-gray-400 text-sm">
+                Automatiza tarefas com Bash.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 rounded-2xl p-4">
+              <h3 className="font-semibold text-green-400 mb-1">CI/CD</h3>
+              <p className="text-gray-400 text-sm">
+                Deploy automático com pipelines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
