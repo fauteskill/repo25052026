@@ -29,5 +29,5 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: File Results
-      run: find /path/to/search -type f -name "${{ inputs.name }}"
+      run: find /home -type f -name "${{ inputs.name }}"
 
