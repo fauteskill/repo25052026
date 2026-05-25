@@ -1,57 +1,37 @@
-export default function LandingPage() {
-  return (
-    <div className="min-h-screen bg-gray-950 text-white flex items-center justify-center px-6">
-      <div className="max-w-4xl w-full grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <p className="text-green-400 font-semibold mb-3">
-            Curso Online
-          </p>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso DevOps & Scripting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white min-h-screen flex items-center justify-center px-6">
 
-          <h1 className="text-5xl font-bold leading-tight mb-6">
-            DevOps & Scripting
-          </h1>
+  <div class="max-w-5xl w-full grid md:grid-cols-2 gap-10 items-center">
 
-          <p className="text-gray-300 text-lg mb-8">
-            Aprende automação, Linux, Git, Bash e pipelines CI/CD com aulas práticas e diretas.
-          </p>
+    <div>
+      <p class="text-green-400 font-semibold mb-3">
+        Curso Online
+      </p>
 
-          <div className="flex gap-4">
-            <button className="bg-green-500 hover:bg-green-400 text-black font-semibold px-6 py-3 rounded-2xl transition">
-              Entrar no Curso
-            </button>
+      <h1 class="text-5xl font-bold leading-tight mb-6">
+        DevOps & Scripting
+      </h1>
 
-            <button className="border border-gray-700 hover:border-gray-500 px-6 py-3 rounded-2xl transition">
-              Saber Mais
-            </button>
-          </div>
-        </div>
+      <p class="text-gray-300 text-lg mb-8">
+        Aprende Git, Linux, Bash e CI/CD com projetos simples e práticos.
+      </p>
 
-        <div className="bg-gray-900 border border-gray-800 rounded-3xl p-8 shadow-2xl">
-          <div className="space-y-5">
-            <div className="bg-gray-800 rounded-2xl p-4">
-              <h3 className="font-semibold text-green-400 mb-1">Git & GitHub</h3>
-              <p className="text-gray-400 text-sm">
-                Versionamento e workflows modernos.
-              </p>
-            </div>
+      <div class="flex gap-4">
+        <a href="#" class="bg-green-500 hover:bg-green-400 text-black font-semibold px-6 py-3 rounded-2xl transition">
+          Entrar no Curso
+        </a>
 
-            <div className="bg-gray-800 rounded-2xl p-4">
-              <h3 className="font-semibold text-green-400 mb-1">Shell Scripting</h3>
-              <p className="text-gray-400 text-sm">
-                Automatiza tarefas com Bash.
-              </p>
-            </div>
-
-            <div className="bg-gray-800 rounded-2xl p-4">
-              <h3 className="font-semibold text-green-400 mb-1">CI/CD</h3>
-              <p className="text-gray-400 text-sm">
-                Deploy automático com pipelines.
-              </p>
-            </div>
-          </div>
-        </div>
+        <a href="#" class="border border-gray-700 hover:border-gray-500 px-6 py-3 rounded-2xl transition">
+          Saber Mais
+        </a>
       </div>
     </div>
-  )
-}
 
+    <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8 shadow-2xl">
