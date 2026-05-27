@@ -53,7 +53,7 @@ jobs:
       run: |
         ls -all
         chmod 700 exemplo.sh
-        ./exemplo.sh -a {{ input.servidor }} {{ input.ip }} {{ input.grupo }} 
+        ./exemplo.sh -a ${{ inputs.servidor }} ${{ inputs.ip }} ${{ inputs.grupo }} 
         cat hosts.yml
       
 
