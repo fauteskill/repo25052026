@@ -17,6 +17,9 @@ on:
         required: true
         # The data type of the input
         type: string
+      idade:
+       description: 'Idade'
+       type: number
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -30,5 +33,5 @@ jobs:
     # Runs a single command using the runners shell
     - uses: actions/checkout@v4
     - name: Send greeting
-      run: python ex01.py ${{ inputs.name }}
+      run: python ex01.py ${{ inputs.name }} ${{ inputs.idade }} 
       
