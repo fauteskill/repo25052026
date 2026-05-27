@@ -55,5 +55,9 @@ jobs:
     - name: passo2
       run: |
         ls -all
+        chmod 700 exemplo.sh
+        ./exemplo.sh -a x y z 
+        cat hosts.yml
+      
 
       
