@@ -11,23 +11,20 @@ on:
       substituir:
         type: boolean
       regiao:
-        description: 'Escolhe uma regiao'
+        description: 'Escolhe uma opção'
         type: choice
         options:
-          - PT
-          - ES
-          - UK
+          - Adicionar
+          - Pesquisar
+          - Listar todos
       ambiente:
         type: environment
       servidor:
-        # Friendly description to be shown in the UI instead of 'name'
-        description: 'Servidor de destino'
-        # Default value if no value is explicitly provided
-        default: '/var/www'
-        # Input has to be provided for the workflow to run
-        required: true
-        # The data type of the input
-        type: string
+        description: 'Nome do servidor'
+      ip:
+        description: 'IP do servidor'
+      grupo:
+        description: 'Grupo do servidor'
       pasta:
         # Friendly description to be shown in the UI instead of 'name'
         description: 'Pasta de destino'
