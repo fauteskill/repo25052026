@@ -34,4 +34,4 @@ jobs:
     - uses: actions/checkout@v4
     - name: Send greeting
       #run: python ex01.py ${{ inputs.name }} ${{ inputs.idade }} 
-      run: python -version
+      run: python --version
